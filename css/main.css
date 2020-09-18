@@ -1,0 +1,120 @@
+#stage{
+  width: 320px;
+  height: 568px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid red;
+}
+.bg1{
+  background-image: url(../img/bg_01.png);
+  height: 768px;
+  width: 100%;
+  position: absolute;
+  top: -200px;
+}
+.bg2{
+  background-image: url(../img/bg_01.png);
+  height: 768px;
+  width: 100%;
+  position: absolute;
+  top: -968px;
+}
+.plan{
+  background-image: url(../img/plane_blue_01.png);
+  background-size: 100% 100%;
+  width: 64px;
+  height: 54px;
+  position: absolute;
+  bottom: -54px;
+  left: 128px;
+  z-index: 2;
+}
+.enemy{
+  background-size: 100% 100%;
+  width: 64px;
+  height: 54px;
+  position: absolute;
+  top: -54px;
+}
+.enemy1{
+  background-image: url(../img/enemy_01.png);
+}
+.enemy2{
+  background-image: url(../img/enemy_02.png);
+}
+.enemy3{
+  background-image: url(../img/enemy_03.png);
+}
+.enemy4{
+  background-image: url(../img/enemy_04.png);
+}
+.bullet{
+  width: 20px;
+  height: 35px;
+  background-image: url(../img/bullet_01.png);
+  background-size: 100% 100%;
+  position: absolute;
+}
+.func{
+  width: 70px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: black;
+  margin: 8px;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+.desc{
+  position: absolute;
+  left: 10px;
+  top: calc(30% - 100px);
+  z-index: 3;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  background-color: #00000060;
+}
+.desc h1{
+  margin-bottom: 50px;
+}
+.desc #btn{
+  display: block;
+  margin: 10px auto 0;
+}
+.desc input{
+  background-color: #00000000;
+  outline:none;
+  color: white;
+}
+.gamesort{
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  left: 10px;
+  top: 568px;
+  z-index: 3;
+  background-color: #00000060;
+  text-align: center;
+  display: none;
+}
+.gamesort table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.gamesort table td{
+  padding: 5px;
+}
+.gamesort #btn3{
+  position: absolute;
+  width: 90px;
+  bottom: 10px;
+  left: 105px;
+}

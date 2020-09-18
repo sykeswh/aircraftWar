@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>飞机大战</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="stage">
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="plan"></div>
+    <div class="func">模式切换</div>
+    <div class="func" style="right: 0;">背景切换</div>
+    <audio id="bgmp3" src="music/background.mp3" loop>当前浏览器不支持audio</audio>
+    <audio id="demp3" src="music/destoryed.mp3">当前浏览器不支持audio</audio>
+    <audio id="shmp3" src="music/shoot.mp3">当前浏览器不支持audio</audio>
+    <div class="desc">
+      <h1>欢迎来到飞机大战</h1>
+      玩家: <input id="input" type="text" value="匿名玩家">  
+      <button id="btn">开始游戏</button>
+    </div>
+    <div class="gamesort">
+      <h1>天梯排行榜</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>排名</th>
+            <th>玩家</th>
+            <th>得分</th>
+          </tr>
+        </thead>
+        <tbody id="gameTbody">
+
+        </tbody>
+      </table>
+      <button id="btn3">返回主界面</button>
+    </div>
+  </div>
+</body>
+</html>
